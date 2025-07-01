@@ -52,7 +52,9 @@ public class Application {
             int sNMP = random.nextInt(3, 20);
             String sDescri = faker.esports().event();
             TipoEvento sTipo = TipoEvento.PUBBLICO;
-            LocalDate sLd = LocalDate.of(2025, 11, 5);
+            //TipoEvento.values(random.nextInt(0,1));
+            LocalDate sLd = LocalDate.of(random.nextInt(2020, 2025), random.nextInt(1, 12),
+                    random.nextInt(1, 30));
 
             Evento eventSupplied = new Evento(sTitolo, sLd, sDescri, sTipo, sNMP);
             return eventSupplied;

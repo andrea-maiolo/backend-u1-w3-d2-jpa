@@ -13,8 +13,6 @@
             <property name="javax.persistence.jdbc.password" value="1234"/>
             <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
             <property name="hibernate.hbm2ddl.auto" value="update"/>
-            <property name="hibernate.show_sql" value="true"/>
-
             <!-- Quest'ultima impostazione serve per chiedere a Hibernate di crearci le tabelle se non esistono ancora
             oppure se esistono aggiornarle se necessario -->
         </properties>
